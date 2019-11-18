@@ -1,9 +1,9 @@
 ---
 title: "My awesome website"
-##output: 
-##  html_document:
-##    toc: true
-##    toc_float: true  --> we want a table of contents floating off to the side
+output: 
+  html_document:
+    toc: true  ## table of contents 
+    toc_float: true  ## we want a table of contents floating off to the side
 ##    theme: cerulean
 ---
 
@@ -27,7 +27,6 @@ To add images and pictures I've found on the internet, I need to use a line of h
 Here's a picture of a cute cat: <img src="images/image.jpg" style="width:75%">
 
 Here's another cute cat: ![](images/image2.jpg)
-
 
 # Connecting other pages 
 
