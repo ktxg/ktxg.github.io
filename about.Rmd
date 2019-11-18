@@ -4,7 +4,7 @@ output:
   html_document:
     toc: true
     toc_float: true
-##    theme: cerulean
+    theme: flatly ## can have page-specific themes and yml's
 ---
 
 # This is Katie's awesome about page!
