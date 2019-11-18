@@ -14,11 +14,11 @@ hahaha this is fun
 
 # Let's add some links 
 
-I often use [google](google.com) to do **data science**. 
+I often use [google](https://google.com) to do **data science**. 
 
 An important feature of websites is hyperlinks. The general format for links is [text for link](address.of.link). So here's an example: 
 
-I feel like I spend too much time watching videos on [that one video-sharing site](youtube.com). 
+I feel like I spend too much time watching videos on [that one video-sharing site](https://youtube.com). 
 
 # Let's add an image
 
