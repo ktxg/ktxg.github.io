@@ -1,0 +1,13 @@
+---
+title: 'About Me'
+##output: 
+##  html_document:
+##    toc: true
+##    toc_float: true
+##    theme: cerulean
+---
+
+# This is Katie's awesome about page!
+## If you're here that means this works
+### Which is a good thing 
+Yay
