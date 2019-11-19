@@ -1,0 +1,11 @@
+---
+title: 'Plotly examples'
+output: 
+  html_document:
+    toc: true
+    toc_float: true 
+---
+
+I am Katie and I am learning how to make websites _with interactive graphics_! 
+
+
