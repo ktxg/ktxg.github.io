@@ -41,11 +41,45 @@ nyc_airbnb =
     price %in% 100:500)  %>% 
   sample_n(5000)
 
-## this makes the dataset more manageable 
+## this makes the dataset more manageable, let's just look at 5,000 samples for now
 ```
+
+## scatterplot 
 
 ```{r}
+nyc_airbnb %>% 
+  plot_ly(x = ~lat, y = ~long, type = "scatter", mode = "markers", 
+          color = ~price, alpha = 0.5)
 
+## this says you should have an x-axis and a y-axis with points between them, which is where the scatter comes from 
+## mode = markers says don't connect the dots to make a line, just put a point every time you see an observation 
+## if you want to, can also add TEXT LABELS like price and rating! 
 ```
 
+## boxplot 
+
+```{r}
+nyc_airbnb %>% 
+  mutate(neighbourhood = fct_reorder(neighbourhood, price)) %>% 
+  
+  ## this first step is a little bit of data manipulation 
+  ## it reorders the 'neighborhood' variable as a factor variable 
+  ## it puts everything in increasing order according to price 
+  ## so 'neighborhood' now ends up as a factor 
+  
+  plot_ly(y = ~price, color = ~neighbourhood, type = "box",
+          colors = "Set2")
+
+  ## next is the plot_ly code itself 
+  ## y-axis ordered by price, color is neighborhood, type is boxplot, and colors is set to Set2 
+  ## can hover for more info and can also zoom in 
+```
+
+## bar graph 
+
+```{r}
+nyc_airbnb %>% 
+  count(neighbourhood) %>% 
+  plot_ly(x = ~neighbourhood, y = ~n, type = "bar")
+```
 
