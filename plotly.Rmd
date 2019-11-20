@@ -2,6 +2,7 @@
 title: 'Plotly examples'
 output: 
   html_document:
+    code_folding: hide
     toc: true
     toc_float: true 
 ---
@@ -75,7 +76,7 @@ nyc_airbnb %>%
   ## can hover for more info and can also zoom in 
 ```
 
-## bar graph 
+## barchart
 
 ```{r}
 nyc_airbnb %>% 
@@ -84,3 +85,4 @@ nyc_airbnb %>%
   plot_ly(x = ~neighbourhood, y = ~n, type = "bar")
 ```
 
+We can use interactivity as a way to facilitate exporatory data analysis so that we can identify outliers and pull them out and interrogate the dataset in a way that's easier than asking "filter based on whether or not latitude = ___." 
