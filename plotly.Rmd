@@ -8,4 +8,44 @@ output:
 
 I am Katie and I am learning how to make websites _with interactive graphics_! 
 
+```{r}
+library(tidyverse)
+library(viridis)
+library(p8105.datasets)
+
+library(plotly)
+```
+
+## Let's make some plots
+
+```{r}
+data("nyc_airbnb")
+## we can see 'nyc_airbnb' in the environment tab now 
+```
+
+
+
+```{r}
+set.seed(1)
+
+data(nyc_airbnb)
+nyc_airbnb = 
+  nyc_airbnb %>% 
+  mutate(rating = review_scores_location / 2) %>%
+  select(
+    neighbourhood_group, neighbourhood, rating, price, room_type, lat, long) %>%
+  filter(
+    !is.na(rating), 
+    neighbourhood_group == "Manhattan",
+    room_type == "Entire home/apt",
+    price %in% 100:500)  %>% 
+  sample_n(5000)
+
+## this makes the dataset more manageable 
+```
+
+```{r}
+
+```
+
 
