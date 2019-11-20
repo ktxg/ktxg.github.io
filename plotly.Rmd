@@ -68,7 +68,7 @@ nyc_airbnb %>%
   ## so 'neighborhood' now ends up as a factor 
   
   plot_ly(y = ~price, color = ~neighbourhood, type = "box",
-          colors = "Set2")
+          colors = "Set2") 
 
   ## next is the plot_ly code itself 
   ## y-axis ordered by price, color is neighborhood, type is boxplot, and colors is set to Set2 
