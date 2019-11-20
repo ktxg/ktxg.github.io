@@ -86,3 +86,4 @@ nyc_airbnb %>%
 ```
 
 We can use interactivity as a way to facilitate exporatory data analysis so that we can identify outliers and pull them out and interrogate the dataset in a way that's easier than asking "filter based on whether or not latitude = ___." 
+
